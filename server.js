@@ -44,10 +44,6 @@ app.get('/expenses', async (req, res) => {
         res.status(500).json({ message: 'Error fetching expenses', error: err.message });
     }
 });
-
-app.get('/try', (req, res) => {
-    res.send('server is running')
-})
         
 // Add a new expense
 app.post('/add-expense', async (req, res) => {
