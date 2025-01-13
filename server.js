@@ -45,6 +45,10 @@ app.get('/expenses', async (req, res) => {
     }
 });
 
+app.get('/try', (req, res) => {
+    res.send('server is running')
+})
+        
 // Add a new expense
 app.post('/add-expense', async (req, res) => {
     try {
